@@ -63,6 +63,9 @@ where PID is the PID retrieved above, name is an arbitrary string for the
 SVG file that will be generated and you can also set the time to execute the `perf`
 which is a integer value for the amount of seconds. The default is 10 seconds. 
 
+The FlameGraphs will be located at the root directory, with SVG extension and can be openned 
+in a browser.
+
 
 ## Links
 
