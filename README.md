@@ -22,7 +22,7 @@ sudo apt install linux-tools-generic
 ```
 
 
-### perf-map-agen
+### perf-map-agent
 
 You can clone the repository https://github.com/jvm-profiling-tools/perf-map-agent
 and follow the instructions located on its readme.
