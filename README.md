@@ -73,6 +73,3 @@ in a browser.
 - https://www.youtube.com/watch?v=ugRrFdda_JQ
 - https://maheshsenniappan.medium.com/java-performance-profiling-using-flame-graphs-e29238130375
 
-## Author
-Daniel Breves
-
