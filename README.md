@@ -33,7 +33,7 @@ and follow the instructions located on its readme.
 You can clone the repository https://github.com/brendangregg/FlameGraph
 
 
-## Generating FlameGraphs
+## Generating the FlameGraph
 
 Besides that, you must run some Java application, preferably using the 
 following command:
@@ -63,7 +63,7 @@ where PID is the PID retrieved above, name is an arbitrary string for the
 SVG file that will be generated and you can also set the time to execute the `perf`
 which is a integer value for the amount of seconds. The default is 10 seconds. 
 
-The FlameGraphs will be located at the root directory, with SVG extension and can be openned 
+The FlameGraph will be located at the root directory, with SVG extension and can be openned 
 in a browser.
 
 
