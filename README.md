@@ -9,11 +9,11 @@ To use the `generate_flame_graph.sh` script you'll need to have:
 - and, obviousey, teh`FlameGraph`.
 
 
-*Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
-directory of this repository.*
+**Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
+directory of this repository.**
 
 
-### linux `perf`
+### Linux `perf`
 
 If you still don't have it installed, you can install it through:
 
@@ -72,6 +72,4 @@ which is a integer value for the amount of seconds. The default is 10 seconds.
 
 ## Author
 Daniel Breves
-26/08/2021
-
 
