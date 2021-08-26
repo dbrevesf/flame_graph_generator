@@ -6,7 +6,7 @@ To use the `generate_flame_graph.sh` script you'll need to have:
 
 - linux `perf` 
 - `perf-map-agent`
-- and, obviousey, teh`FlameGraph`.
+- and, obviously, the `FlameGraph`.
 
 
 **Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
