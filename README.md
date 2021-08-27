@@ -1,48 +1,21 @@
 # FlowGraph Generator for Java
 
-## Dependencies
-
-To use the `generate_flame_graph.sh` script you'll need to have: 
-
-- linux `perf` 
-- `perf-map-agent`
-- and, obviously, the `FlameGraph`.
-
-
-**Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
-directory of this repository.**
-
-
-### Linux `perf`
-
-If you still don't have it installed, you can install it through:
-
-```
-sudo apt install linux-tools-generic
-```
-
-
-### perf-map-agent
-
-You can clone the repository https://github.com/jvm-profiling-tools/perf-map-agent
-and follow the instructions located on its readme.
-
-
-### FlameGraph
-
-You can clone the repository https://github.com/brendangregg/FlameGraph
-
+This repository contains a script to generate a FlameGraph of a Java application through the stack trace obtained through the perf, which is a performance analysing tool in Linux. It's also using the `perf-map-agent` which is a java agent to generate `/tmp/perf-<pid>.map` files for just-in-time(JIT)-compiled methods.
 
 ## Generating the FlameGraph
 
-Besides that, you must run some Java application, preferably using the 
+First of all, you must run the Java application that you would like to profile, preferably using the 
 following command:
 
 ```
 java -XX:+PreserveFramePointer -jar <application.jar> 
 ```
 
-Once it's running, you can retrieve the PID executing the following command:
+The `-XX:+PreserveFramePointer` argument is used to provide information to the debuggers about the call stack. 
+With this option set, perf can construct more accurate stack traces by using information in the frame pointer 
+about the currently executing method. 
+
+Once it's running, you'll need the application PID. One way you can get it is executing the following command:
 
 ```
 pgrep java
@@ -72,4 +45,4 @@ in a browser.
 - https://www.brendangregg.com/flamegraphs.html
 - https://www.youtube.com/watch?v=ugRrFdda_JQ
 - https://maheshsenniappan.medium.com/java-performance-profiling-using-flame-graphs-e29238130375
-
+ 
