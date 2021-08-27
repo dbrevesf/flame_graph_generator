@@ -6,14 +6,14 @@ To use the `generate_flame_graph.sh` script you'll need to have:
 
 - linux `perf` 
 - `perf-map-agent`
-- and, obviousey, teh`FlameGraph`.
+- and, obviously, the `FlameGraph`.
 
 
-*Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
-directory of this repository.*
+**Both `perf-map-agent` and `FlameGraph` repositories must be cloned at the root
+directory of this repository.**
 
 
-### linux `perf`
+### Linux `perf`
 
 If you still don't have it installed, you can install it through:
 
@@ -22,7 +22,7 @@ sudo apt install linux-tools-generic
 ```
 
 
-### perf-map-agen
+### perf-map-agent
 
 You can clone the repository https://github.com/jvm-profiling-tools/perf-map-agent
 and follow the instructions located on its readme.
@@ -33,7 +33,7 @@ and follow the instructions located on its readme.
 You can clone the repository https://github.com/brendangregg/FlameGraph
 
 
-## Generating FlameGraphs
+## Generating the FlameGraph
 
 Besides that, you must run some Java application, preferably using the 
 following command:
@@ -63,15 +63,13 @@ where PID is the PID retrieved above, name is an arbitrary string for the
 SVG file that will be generated and you can also set the time to execute the `perf`
 which is a integer value for the amount of seconds. The default is 10 seconds. 
 
+The FlameGraph will be located at the root directory, with SVG extension and can be openned 
+in a browser.
+
 
 ## Links
 
 - https://www.brendangregg.com/flamegraphs.html
 - https://www.youtube.com/watch?v=ugRrFdda_JQ
 - https://maheshsenniappan.medium.com/java-performance-profiling-using-flame-graphs-e29238130375
-
-## Author
-Daniel Breves
-26/08/2021
-
 
