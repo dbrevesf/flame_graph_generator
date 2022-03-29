@@ -1,4 +1,4 @@
-# FlowGraph Generator for Java
+# FlameGraph Generator for Java
 
 This repository contains a script to generate a FlameGraph of a Java application through the stack trace obtained through the perf, which is a performance analysing tool in Linux. It's also using the `perf-map-agent` which is a java agent to generate `/tmp/perf-<pid>.map` files for just-in-time(JIT)-compiled methods.
 
